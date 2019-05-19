@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    @include fontStyle ($fontSize-p,300,'Roboto-Regular');
+}
+ul{
+    list-style-type: none;
+}
+.d-flex{display: flex;}
+.d-grid{@extend  %d-grid;}
+.container{
+    width: 75%;
+    // max-width: 1170px;
+    @extend %m-auto;
+}
+h1{
+    @include fontStyle ($fontSize-h1,$fontWeight,'OpenSans-Bold');
+    @extend %colorWhite;
+    @extend  %m-botton-15;
+}
+h2{
+    @include fontStyle ($fontSize-h2,$fontWeight,'OpenSans-Bold');
+    @extend  %m-botton-15;
+    @extend  %colorBlackH;
+}
+h3{
+    @include fontStyle ($fontSize-h3,$fontWeight,'OpenSans-Bold');
+    @extend  %m-botton-15;
+    @extend  %colorBlackH;    
+}
+p{
+    @include fontStyle ($fontSize-p,$fontWeightP,'Roboto-Regular');
+    color: $greyColorP;
+}
+button{
+    @include fontStyle ($fontSize-Button,$fontWeight,'OpenSans-Bold');
+    @extend %bgGradient;
+    @extend %colorWhite;
+    border: none;
+    border-radius: $borderRaduisButton;
+    padding: 17px 45px;
+}
+.head{
+    @include backGround($imgHeader,cover,no-repeat);
+    padding: 170px 0px 140px 0px;
+    header{
+        @extend %bgGradient;
+        position:fixed;
+        width: 100%;
+        padding: 20px 0;
+        top: 0;
+        left: 0;
+        .container{
+            justify-content: space-between;
+            align-items: center;
+            nav{
+                width: 60%;
+                ul{
+                    width: 100%; 
+                    justify-content: space-between;
+                    text-transform: uppercase;
+                    a{
+                        @extend %colorWhite;
+                        @include fontStyle ($fontSizeNav-12,$fontWeight, sans-serif);
+                    }
+                   }
+                  }
+        
+                }
+    }
+    .content{
+        @extend %grid-tem-Col2;
+        align-items: center;
+        justify-items: flex-end;
+        p{
+            @extend %m-botton-40;
+            @extend %colorWhite;
+        }
+        button{
+            color:$blackBgColor ;
+            background: $whiteColor;
+        }
+        figure{
+            text-align: right;
+            img{
+                @extend %imgW-90;
+            }
+        }
+    }
+}
+.Features{
+    @extend %pad-100;
+   .textFeatures{
+       @extend  %txt-center;
+       @extend %m-botton-40;
+   } 
+   .articlesFeatures{
+       @extend  %d-grid;
+       @extend %grid-tem-Col4;
+       @extend %g-gap30;
+       justify-content: center;
+       article{
+        padding: 50px 30px;
+        @extend %box-shadow-hover;
+           }
+       .imgFeature{
+        @extend %m-botton-40;
+       }
+   }
+}
+.weBelieve{
+    .weBelieve-one{
+        @extend %bgWhite;
+        @extend %pad-100;
+        .container{
+           @extend  %d-grid;
+           @extend %grid-tem-Col2;
+           @extend  %Just-align-center;
+           grid-gap: 100px;
+           figure{
+            img{
+                max-width: 100%;
+            }
+           }
+           p,h2{
+            @extend %m-botton-40;
+           }
+        }
+    }
+    .weBelieve-two{
+        @extend %pad-100;
+        .container{
+           @extend  %d-grid;
+           @extend %grid-tem-Col2;
+           @extend  %Just-align-center;
+           grid-gap: 100px;
+           figure{
+            img{
+                max-width: 100%;
+            }
+           }
+           p,h2{
+            @extend %m-botton-40;
+           }
+        }
+    }
+    
+}
+/* Start Video  Section  ...... */
+.Video{
+    padding: 0 0 100px;
+    .container{
+        position: relative;
+        video{
+            width: 100%;
+            height: 0 auto;
+        }
+        div.overLay{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%); 
+        }
+    }
+}
+/* End Video  Section  ...... */
+/* Start Pricing Table  Section  ......*/
+.PricingTable{
+    @extend %pad-100;
+    @extend %bgWhite;
+    .container{
+        padding: 0 60px;
+        .textPricingTable{
+            @extend  %txt-center;
+            @extend %m-botton-40;
+        }
+        .articlePricingTable{
+             @extend  %d-grid;
+             @extend %grid-tem-Col3;
+             @extend %g-gap30;
+             article{
+                 background-color: $whiteColor;
+                 
+                 .standard{
+                     @extend %d-flex;
+                     border-bottom: 2px solid $whiteBgColor;  
+                     justify-content: space-between;
+                     align-items: center;
+                    //  padding-bottom: 40px;
+                     padding: 40px 30px;
+                 }
+                 ul{
+                    //  padding-top: 40px;
+                     padding: 30px 30px 0;
+                     li{
+                         margin-bottom: 15px;
+                         @extend %txt-center;
+                         a{
+                             @include fontStyle ($fontSize-p,"normal",'Roboto-Regular');
+                             color: $greyColorP;
+                         }
+                     }
+                 }
+                 button{
+                     color: $BlackColorH;
+                     @extend %border-grey; 
+                     background: $whiteBgColor;
+                     display: block;
+                    margin: 30px auto 40px;
+                    &:hover{
+                        border: none;
+                        @extend %bgGradient;
+                        @extend %colorWhite;
+
+                    }
+                 }
+             }
+        }
+    }
+   
+}
+/* End Pricing Table  Section  ......*/
+/* Start screenShot  Section  ......*/
+.screenShot{
+    @extend %pad-100;
+    .textScreenShot{
+        @extend  %txt-center;
+        @extend %m-botton-40;
+    }  
+    .imgScreenShot{
+        @extend  %d-grid;
+        @extend %grid-tem-Col4;
+        @extend %g-gap30;
+        img{
+            @extend %imgW-90;
+        }
+    }
+}
+/* End screenShot  Section  ......*/
+/*Start Testimonials  Section  ......*/
+.Testimonials{
+    @extend %pad-100;
+    @extend %bgWhite;
+    .text{
+        @extend  %txt-center;
+        @extend %m-botton-40;
+    }
+    .items{
+        @extend  %d-grid;
+        @extend %grid-tem-Col2;
+        @extend %g-gap30;
+        section{
+            @extend %trans;
+            &:hover{
+                box-shadow: 3px 5px 30px 1px rgba(0, 0, 0, 0.08);
+                h3{
+                    @extend %bg-g-t;   
+                }
+            }
+            @extend  %d-grid;
+            grid-template-columns: 1fr 4fr;
+            @extend %g-gap30;  
+            padding: 40px;
+            background-color: $whiteColor;
+            border-radius: $borderRaduisMedia;
+            .contentItem{
+             p.Accessories{
+                 margin-bottom: 20px;
+             }   
+            }
+        }
+    }
+}
+/*End Testimonials  Section  ......*/
+/*Start DownloadAPP  Section  ......*/
+.DownloadAPP{
+    background:$linearGradient;
+    @extend %pad-100;
+    .container{
+        padding: 0 120px;
+   .text{
+       @extend  %txt-center;
+       @extend %m-botton-40;
+       p,h2{
+        @extend %colorWhite;
+       }
+        }
+    .apptype{
+        justify-content: center;
+       .app{
+           padding: 10px 30px;
+           margin-right: 20px;
+           border: 1px solid $whiteColor;
+           border-radius: $borderRaduisButton;
+            align-items: center;
+           @extend %trans;
+               &:hover{
+                background: $whiteColor;
+                i{
+                    @extend %bg-g-t;
+                }
+                p,h3{
+                    color: $BlackColorH;
+                   }
+               }
+           }
+           i{
+            font-size: $fontSize-h1 - 20px;;
+            line-height: 42.8571px;
+            font-weight: 900;
+            color: $whiteColor;
+            margin-right: 20px;
+            padding-left: 3px;
+           }
+           p,h3{
+            @extend %colorWhite;
+            margin-bottom: 10px;
+           }
+           p{
+            margin-bottom: 0px;   
+           }
+       } 
+    }    
+     
+}
+/*End DownloadAPP  Section  ......*/
+/*Start Lasted News  Section  ......*/
+.lastedNews{
+    @extend %pad-100;
+   .text{
+       @extend  %txt-center;
+       @extend %m-botton-40;
+   }
+   .articlesLastedNews{
+    @extend  %d-grid;
+    @extend %grid-tem-Col3;
+    @extend %g-gap30;
+    article{
+        @extend %bgWhite;
+        @extend %trans;
+        padding: 50px 30px;
+
+        &:hover{
+            @extend %box-shadow-hover;
+            background-color: #ffffff;
+        } 
+        a{
+            padding: 8px 20px;
+            color: $greyColorP;
+            @extend %border-grey; 
+            background: $whiteColor;
+            margin-bottom: 20px;
+            &:hover{
+                @extend %colorWhite;
+                @extend %bgGradient;
+            }
+        }
+        h3{
+            margin-top: 20px;
+            text-transform: uppercase;
+            &:hover{
+               @extend %bg-g-t;
+            }
+        }
+        .iconLastSec{
+            @extend %d-flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px; 
+            div{
+                @extend %d-flex;
+                i{
+                    padding-right: 10px;
+                    color: $greyColorP;
+                }
+            }
+        }
+    }
+   }
+}
+/*End Lasted News  Section  ......*/
+/* Start Footer Section ..........*/
+footer{
+    background-color: $blackBgColor;
+    @extend %pad-100;
+    .container{
+        width: 85%;
+        .contentFooter{
+            @extend  %d-grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            @extend %g-gap30;
+            .newSletter{
+                form{
+                    margin-top: 25px;
+                }
+                input[type=text]{
+                    width: 80%;
+                    border: 1px solid #222222;
+                    height: 40px;
+                }
+                button,input[type=text]{
+                    border-radius: $borderRaduisInput;
+                    padding: 10px 20px;
+                }
+                button{
+                    margin-left: -60px;
+                    padding: 11px 30px;
+                }
+            }
+            h3{
+                margin-bottom: 30px;
+            }
+                h3,a{
+                    color: $whiteColor;
+            }
+            a{
+                display: block;
+                margin-bottom: 12px;
+            }
+            figure{
+                @extend %grid-tem-Col4;
+                grid-gap: 10px;
+            }
+        }
+        .copyright{
+            @extend %d-flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 0 40px;
+           span{
+            color:$purplefooterColor;
+           }
+           .icon i{
+            background-Color: #000000;
+            margin-right: 10px;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            @extend %txt-center;
+        }
+        }
+        p{
+            color: $greyColorFooterP;
+        }
+    }
+}
+/* End Footer Section ..........*/

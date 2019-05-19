@@ -1,0 +1,356 @@
+/*----------fontWeigh--------------*/
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../Fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("../Fonts/OpenSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../Fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../Fonts/OpenSans-SemiBold.ttf"); }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../Fonts/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../Fonts/Roboto-Medium.ttf"); }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../Fonts/Roboto-Regular.ttf"); }
+
+button, .head header, .PricingTable .container .articlePricingTable article button:hover, .lastedNews .articlesLastedNews article a:hover {
+  background: linear-gradient(7deg, #bc2bff 0%, #7249fb 100%); }
+
+.weBelieve .weBelieve-one, .PricingTable, .Testimonials, .lastedNews .articlesLastedNews article {
+  background: #f9faff; }
+
+h1, button, .head header .container nav ul a, .head .content p, .PricingTable .container .articlePricingTable article button:hover, .DownloadAPP .container .text p, .DownloadAPP .container .text h2, .DownloadAPP .container .apptype p, .DownloadAPP .container .apptype h3, .lastedNews .articlesLastedNews article a:hover {
+  color: #fff; }
+
+h2, h3 {
+  color: #222222; }
+
+h1, h2, h3 {
+  margin-bottom: 15px; }
+
+.head .content p, .Features .textFeatures, .Features .articlesFeatures .imgFeature, .weBelieve .weBelieve-one .container p, .weBelieve .weBelieve-one .container h2, .weBelieve .weBelieve-two .container p, .weBelieve .weBelieve-two .container h2, .PricingTable .container .textPricingTable, .screenShot .textScreenShot, .Testimonials .text, .DownloadAPP .container .text, .lastedNews .text {
+  margin-bottom: 40px; }
+
+.Features .textFeatures, .PricingTable .container .textPricingTable, .PricingTable .container .articlePricingTable article ul li, .screenShot .textScreenShot, .Testimonials .text, .DownloadAPP .container .text, .lastedNews .text, footer .container .copyright .icon i {
+  text-align: center; }
+
+.Features, .weBelieve .weBelieve-one, .weBelieve .weBelieve-two, .PricingTable, .screenShot, .Testimonials, .DownloadAPP, .lastedNews, footer {
+  padding: 100px 0; }
+
+.head .content figure img, .screenShot .imgScreenShot img {
+  max-width: 90%; }
+
+.d-grid, .Features .articlesFeatures, .weBelieve .weBelieve-one .container, .weBelieve .weBelieve-two .container, .PricingTable .container .articlePricingTable, .screenShot .imgScreenShot, .Testimonials .items, .Testimonials .items section, .lastedNews .articlesLastedNews, footer .container .contentFooter {
+  display: grid; }
+
+.PricingTable .container .articlePricingTable article .standard, .lastedNews .articlesLastedNews article .iconLastSec, .lastedNews .articlesLastedNews article .iconLastSec div, footer .container .copyright {
+  display: flex; }
+
+.head .content, .weBelieve .weBelieve-one .container, .weBelieve .weBelieve-two .container, .Testimonials .items {
+  grid-template-columns: 1fr 1fr; }
+
+.PricingTable .container .articlePricingTable, .lastedNews .articlesLastedNews {
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.Features .articlesFeatures, .screenShot .imgScreenShot, footer .container .contentFooter figure {
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.Features .articlesFeatures, .PricingTable .container .articlePricingTable, .screenShot .imgScreenShot, .Testimonials .items, .Testimonials .items section, .lastedNews .articlesLastedNews, footer .container .contentFooter {
+  grid-gap: 30px; }
+
+.weBelieve .weBelieve-one .container, .weBelieve .weBelieve-two .container {
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  margin: 0 auto; }
+
+.Testimonials .items section:hover h3, .DownloadAPP .container .apptype .app:hover i, .lastedNews .articlesLastedNews article h3:hover {
+  background: linear-gradient(7deg, #bc2bff 0%, #7249fb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.Testimonials .items section, .DownloadAPP .container .apptype .app, .lastedNews .articlesLastedNews article {
+  transition: all 0.4s ease-in-out; }
+
+.PricingTable .container .articlePricingTable article button, .lastedNews .articlesLastedNews article a {
+  border: 1px solid #dddddd; }
+
+.Features .articlesFeatures article, .lastedNews .articlesLastedNews article:hover {
+  box-shadow: 3px 5px 20px 1px rgba(0, 0, 0, 0.08); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; }
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19.99998px;
+  font-weight: 300;
+  font-family: "Roboto-Regular"; }
+
+ul {
+  list-style-type: none; }
+
+.d-flex {
+  display: flex; }
+
+.container {
+  width: 75%; }
+
+h1 {
+  font-size: 60px;
+  line-height: 85.7142px;
+  font-weight: 600;
+  font-family: "OpenSans-Bold"; }
+
+h2 {
+  font-size: 36px;
+  line-height: 51.42852px;
+  font-weight: 600;
+  font-family: "OpenSans-Bold"; }
+
+h3 {
+  font-size: 20px;
+  line-height: 28.5714px;
+  font-weight: 600;
+  font-family: "OpenSans-Bold"; }
+
+p {
+  font-size: 14px;
+  line-height: 19.99998px;
+  font-weight: 300;
+  font-family: "Roboto-Regular";
+  color: #777777; }
+
+button {
+  font-size: 13px;
+  line-height: 18.57141px;
+  font-weight: 600;
+  font-family: "OpenSans-Bold";
+  border: none;
+  border-radius: 5px;
+  padding: 17px 45px; }
+
+.head {
+  background-image: url("../img/banner/home-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 170px 0px 140px 0px; }
+  .head header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    top: 0;
+    left: 0; }
+    .head header .container {
+      justify-content: space-between;
+      align-items: center; }
+      .head header .container nav {
+        width: 60%; }
+        .head header .container nav ul {
+          width: 100%;
+          justify-content: space-between;
+          text-transform: uppercase; }
+          .head header .container nav ul a {
+            font-size: 12px;
+            line-height: 17.14284px;
+            font-weight: 600;
+            font-family: sans-serif; }
+  .head .content {
+    align-items: center;
+    justify-items: flex-end; }
+    .head .content button {
+      color: #222222;
+      background: #fff; }
+    .head .content figure {
+      text-align: right; }
+
+.Features .articlesFeatures {
+  justify-content: center; }
+  .Features .articlesFeatures article {
+    padding: 50px 30px; }
+
+.weBelieve .weBelieve-one .container {
+  grid-gap: 100px; }
+  .weBelieve .weBelieve-one .container figure img {
+    max-width: 100%; }
+
+.weBelieve .weBelieve-two .container {
+  grid-gap: 100px; }
+  .weBelieve .weBelieve-two .container figure img {
+    max-width: 100%; }
+
+/* Start Video  Section  ...... */
+.Video {
+  padding: 0 0 100px; }
+  .Video .container {
+    position: relative; }
+    .Video .container video {
+      width: 100%;
+      height: 0 auto; }
+    .Video .container div.overLay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+/* End Video  Section  ...... */
+/* Start Pricing Table  Section  ......*/
+.PricingTable .container {
+  padding: 0 60px; }
+  .PricingTable .container .articlePricingTable article {
+    background-color: #fff; }
+    .PricingTable .container .articlePricingTable article .standard {
+      border-bottom: 2px solid #f9faff;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 30px; }
+    .PricingTable .container .articlePricingTable article ul {
+      padding: 30px 30px 0; }
+      .PricingTable .container .articlePricingTable article ul li {
+        margin-bottom: 15px; }
+        .PricingTable .container .articlePricingTable article ul li a {
+          font-size: 14px;
+          line-height: 19.99998px;
+          font-weight: "normal";
+          font-family: "Roboto-Regular";
+          color: #777777; }
+    .PricingTable .container .articlePricingTable article button {
+      color: #222222;
+      background: #f9faff;
+      display: block;
+      margin: 30px auto 40px; }
+      .PricingTable .container .articlePricingTable article button:hover {
+        border: none; }
+
+/* End Pricing Table  Section  ......*/
+/* Start screenShot  Section  ......*/
+/* End screenShot  Section  ......*/
+/*Start Testimonials  Section  ......*/
+.Testimonials .items section {
+  grid-template-columns: 1fr 4fr;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px; }
+  .Testimonials .items section:hover {
+    box-shadow: 3px 5px 30px 1px rgba(0, 0, 0, 0.08); }
+  .Testimonials .items section .contentItem p.Accessories {
+    margin-bottom: 20px; }
+
+/*End Testimonials  Section  ......*/
+/*Start DownloadAPP  Section  ......*/
+.DownloadAPP {
+  background: linear-gradient(7deg, #bc2bff 0%, #7249fb 100%); }
+  .DownloadAPP .container {
+    padding: 0 120px; }
+    .DownloadAPP .container .apptype {
+      justify-content: center; }
+      .DownloadAPP .container .apptype .app {
+        padding: 10px 30px;
+        margin-right: 20px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        align-items: center; }
+        .DownloadAPP .container .apptype .app:hover {
+          background: #fff; }
+          .DownloadAPP .container .apptype .app:hover p, .DownloadAPP .container .apptype .app:hover h3 {
+            color: #222222; }
+      .DownloadAPP .container .apptype i {
+        font-size: 40px;
+        line-height: 42.8571px;
+        font-weight: 900;
+        color: #fff;
+        margin-right: 20px;
+        padding-left: 3px; }
+      .DownloadAPP .container .apptype p, .DownloadAPP .container .apptype h3 {
+        margin-bottom: 10px; }
+      .DownloadAPP .container .apptype p {
+        margin-bottom: 0px; }
+
+/*End DownloadAPP  Section  ......*/
+/*Start Lasted News  Section  ......*/
+.lastedNews .articlesLastedNews article {
+  padding: 50px 30px; }
+  .lastedNews .articlesLastedNews article:hover {
+    background-color: #ffffff; }
+  .lastedNews .articlesLastedNews article a {
+    padding: 8px 20px;
+    color: #777777;
+    background: #fff;
+    margin-bottom: 20px; }
+  .lastedNews .articlesLastedNews article h3 {
+    margin-top: 20px;
+    text-transform: uppercase; }
+  .lastedNews .articlesLastedNews article .iconLastSec {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px; }
+    .lastedNews .articlesLastedNews article .iconLastSec div i {
+      padding-right: 10px;
+      color: #777777; }
+
+/*End Lasted News  Section  ......*/
+/* Start Footer Section ..........*/
+footer {
+  background-color: #222222; }
+  footer .container {
+    width: 85%; }
+    footer .container .contentFooter {
+      grid-template-columns: 1fr 2fr 1fr; }
+      footer .container .contentFooter .newSletter form {
+        margin-top: 25px; }
+      footer .container .contentFooter .newSletter input[type=text] {
+        width: 80%;
+        border: 1px solid #222222;
+        height: 40px; }
+      footer .container .contentFooter .newSletter button, footer .container .contentFooter .newSletter input[type=text] {
+        border-radius: 20px;
+        padding: 10px 20px; }
+      footer .container .contentFooter .newSletter button {
+        margin-left: -60px;
+        padding: 11px 30px; }
+      footer .container .contentFooter h3 {
+        margin-bottom: 30px; }
+      footer .container .contentFooter h3, footer .container .contentFooter a {
+        color: #fff; }
+      footer .container .contentFooter a {
+        display: block;
+        margin-bottom: 12px; }
+      footer .container .contentFooter figure {
+        grid-gap: 10px; }
+    footer .container .copyright {
+      justify-content: space-between;
+      margin-top: 30px;
+      padding: 0 40px; }
+      footer .container .copyright span {
+        color: #6247ea; }
+      footer .container .copyright .icon i {
+        background-Color: #000000;
+        margin-right: 10px;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        line-height: 40px; }
+    footer .container p {
+      color: rgba(255, 255, 255, 0.6); }
+
+/* End Footer Section ..........*/

@@ -1,0 +1,109 @@
+@mixin backGround($src,$size,$repeat) {
+    background-image: url($src);
+    background-size: $size;
+    background-repeat: $repeat;
+}
+@mixin button($colorBtn) {
+    padding: 0 45px;
+    color: $BlackColorh4;
+    border-radius: $borderRaduisButton;
+    line-height: 50px;
+    font-size: $fontSize-Button;
+    font-family: $OpenSanceFont;
+    font-weight: $fontWeight;
+    background-color: $colorBtn;
+}
+@mixin fontFace($fontFamily,$src) {
+    @font-face 
+    {
+        font-family:$fontFamily;
+        src: url($src);
+    } 
+    
+}
+@mixin fontStyle ($fontSize,$fontWeight,$fontFamily){
+    font-size: $fontSize;
+    line-height:$fontSize * 1.42857; //line-height = font-size * 1.42857
+    font-weight:$fontWeight;
+    font-family: $fontFamily;
+}
+@include fontFace('OpenSans-Bold','../Fonts/OpenSans-Bold.ttf');
+@include fontFace('OpenSans-ExtraBold','../Fonts/OpenSans-ExtraBold.ttf');
+@include fontFace('OpenSans-Regular','../Fonts/OpenSans-Regular.ttf');
+@include fontFace('OpenSans-SemiBold','../Fonts/OpenSans-SemiBold.ttf');
+
+@include fontFace('Roboto-Bold','../Fonts/Roboto-Bold.ttf');
+@include fontFace('Roboto-Medium','../Fonts/Roboto-Medium.ttf');
+@include fontFace('Roboto-Regular','../Fonts/Roboto-Regular.ttf');
+%bgGradient{
+    background: $linearGradient;
+}
+%bgWhite{
+    background: $whiteBgColor;
+}
+%colorWhite{
+    color: $whiteColor;
+}
+%colorBlackH{
+    color: $BlackColorH;
+}
+%m-botton-15{
+    margin-bottom: 15px;
+}
+%m-botton-40{
+    margin-bottom: 40px;
+}
+%txt-center{
+    text-align: center;
+}
+%pad-100{
+    padding: 100px 0;
+}
+%imgW-90{
+      max-width: 90%;
+}
+%d-grid{
+    display: grid;
+}
+%d-flex{
+    display: flex;
+}
+%grid-tem-Col2{
+    grid-template-columns: 1fr 1fr ;
+}
+%grid-tem-Col3{
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+%grid-tem-Col4{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+%g-gap30{
+    grid-gap: 30px;
+}
+%Just-align-center{ 
+    justify-content: center;
+    align-items: center;
+}
+%m-auto{
+    margin: 0 auto;
+}
+%bg-g-t{
+    background: $linearGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+%trans{
+    transition: all 0.4s ease-in-out;
+}
+%border-grey{
+    border: 1px solid #dddddd;
+}
+%box-shadow-hover{
+    box-shadow: 3px 5px 20px 1px rgba(0, 0, 0, 0.08);
+}
+// @mixin vendor (){
+//     @each $var in $Vendors {
+//         #{$var}
+//     }
+// }
